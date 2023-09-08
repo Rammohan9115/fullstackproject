@@ -7,7 +7,7 @@ const session = require("express-session")
 const app = express();
 
 app.use(cors({
-    origin:[],
+    origin:["fullstackproject-theta.vercel.app"],
     methods:["POST","GET"],
     Credentials:true
 }))
