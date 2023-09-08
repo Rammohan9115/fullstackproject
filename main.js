@@ -5,6 +5,12 @@ const mongoose = require("mongoose")
 const session = require("express-session")
 
 const app = express();
+
+app.use(cors({
+    origin:[],
+    methods:["POST","GET"],
+    Credentials:true
+}))
 const PORT = process.env.PORT || 5501;
 
 //database connection
